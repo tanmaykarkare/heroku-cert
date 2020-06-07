@@ -11,7 +11,7 @@ app.use(noCache());
 app.use(compression());
 
 app.get('/', (req, res) => {
-  const hello = 'world final review';
+  const hello = 'world';
   if (process.env.DEVELOPMENT) {
     const requestId = req.header('x-request-id');
     // eslint-disable-next-line
